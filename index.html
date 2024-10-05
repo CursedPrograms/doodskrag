@@ -12,217 +12,226 @@
   <div id="content">
 
     <h1>DOODSKRAG</h1>
-    <img id="pentagram" src="images/pentagram.png"
-      alt="Detailed black pentagram symbol on a red background" width="300" height="300">
+    <img id="pentagram" src="images/pentagram.png" alt="pentagram" width="300"
+      height="300">
     <p>Omhels die duisternis... oorhandig jou siel.</p>
 
     <div id="image-container">
-      <img class="satanist-image" src="images/ritual00.jpg"
-        alt="Black and white image of a hooded satanist performing a ritual" width="200" height="300">
-      <img class="satanist-image" src="images/ritual01.jpg"
-        alt="Grayscale photo of a satanic altar with candles and occult symbols" width="200" height="300">
-      <img class="satanist-image" src="images/ritual02.jpg"
-        alt="Monochrome picture of a satanic gathering in a dark forest" width="200" height="300">
+      <img class="satanist-image" src="images/ritual00.jpg" alt="Monochrome picture" width="200" height="300">
+      <img class="satanist-image" src="images/ritual01.jpg" alt="Monochrome picture" width="200" height="300">
+      <img class="satanist-image" src="images/ritual02.jpg" alt="Monochrome picture" width="200" height="300">
     </div>
 
     <div id="info-container">
       <h2>Die Pad van Satan</h2>
-      <p>Satanisme is 'n filosofie wat individualisme, hedonisme en persoonlike mag omarm. Ons verwerp tradisionele moraliteit en omarm die donkerder aspekte van menslike natuur.</p>
+      <p>Satanisme is 'n filosofie wat individualisme, hedonisme en persoonlike mag omarm. Ons verwerp tradisionele
+        moraliteit en omarm die donkerder aspekte van menslike natuur.</p>
       <p>Belangrike beginsels:</p>
       <ul>
-          <li>Genot in plaas van onthouding</li>
-          <li>Lewevolle bestaan in plaas van spirituele drome</li>
-          <li>Onbesmette wysheid in plaas van hipokriet selfbedrog</li>
-          <li>Wraak in plaas van om die ander wang te draai</li>
-          <li>Verantwoordelikheid teenoor verantwoordelike mense in plaas van kommer vir psigiese vampiere</li>
+        <li>Genot in plaas van onthouding</li>
+        <li>Lewevolle bestaan in plaas van spirituele drome</li>
+        <li>Onbesmette wysheid in plaas van hipokriet selfbedrog</li>
+        <li>Wraak in plaas van om die ander wang te draai</li>
+        <li>Verantwoordelikheid teenoor verantwoordelike mense in plaas van kommer vir psigiese vampiere</li>
       </ul>
-      <p>Sluit by ons aan in die soeke na vleeslike genot en die verwerping van maatskaplike beperkings. Omarm jou ware natuur en ontsluit jou volle potensiaal deur die mag van Satan!</p>
-      
-  </div>
-  <div id="jumpscare" class="hidden"></div>
-  <div id="flashing-images"></div>
+      <p>Sluit by ons aan in die soeke na vleeslike genot en die verwerping van maatskaplike beperkings. Omarm jou ware
+        natuur en ontsluit jou volle potensiaal deur die mag van Satan!</p>
 
-  <script>
-    const jumpscare = document.getElementById('jumpscare');
-    const flashingImages = document.getElementById('flashing-images');
-    const scream = new Howl({
-      src: ['https://example.com/demonic-scream.mp3']
-    });
-
-    const triggerJumpscare = () => {
-      jumpscare.classList.remove('hidden');
-      scream.play();
-      setTimeout(() => {
-        jumpscare.classList.add('hidden');
-      }, 800);
-    };
-
-    // Random jumpscare timing
-    setInterval(() => {
-      if (Math.random() < 0.15) {
-        triggerJumpscare();
-      }
-    }, 7000);
-
-    // Cursor-triggered jumpscares
-    document.addEventListener('mousemove', (e) => {
-      if (Math.random() < 0.03) {
-        triggerJumpscare();
-      }
-    });
-
-    // Background sounds
-    const ambience = new Howl({
-      src: ['https://example.com/evil-ambience.mp3'],
-      loop: true,
-      volume: 0.4
-    });
-    ambience.play();
-
-    // Evil laughter
-    const evilLaugh = new Howl({
-      src: ['https://example.com/evil-laugh.mp3']
-    });
-
-    setInterval(() => {
-      if (Math.random() < 0.1) {
-        evilLaugh.play();
-      }
-    }, 20000);
-
-    // Image hover effect
-    const images = document.querySelectorAll('.satanist-image');
-    images.forEach(img => {
-      img.addEventListener('mouseover', () => {
-        const demonWhisper = new Howl({
-          src: ['https://example.com/demon-whisper.mp3'],
-          volume: 0.6
-        });
-        demonWhisper.play();
+    </div>
+    <div id="jumpscare" class="hidden"></div>
+    <div id="flashing-images"></div>
+    <footer style="background-color: #000000; color: #fff; padding: 20px; text-align: center; font-family: 'Futura', sans-serif;">
+      <div>
+          <h2>Doodskrag 2024</h2>
+          <p>&copy; 2024 Doodskrag. All rights reserved.</p>
+      </div>
+      <div>
+          <a href="https://www.facebook.com/Doodskrag" style="color: #fff; margin: 0 10px;">Facebook</a>
+          <a href="https://x.com/Doodskrag" style="color: #fff; margin: 0 10px;">X</a>
+          <a href="https://www.instagram.com/doodskrag/" style="color: #fff; margin: 0 10px;">Instagram</a>
+      </div>
+   </footer>
+    <script>
+      const jumpscare = document.getElementById('jumpscare');
+      const flashingImages = document.getElementById('flashing-images');
+      const scream = new Howl({
+        src: ['https://example.com/demonic-scream.mp3']
       });
-    });
 
-    // Blood drip effect
-    const createBloodDrip = () => {
-      const drip = document.createElement('div');
-      drip.style.position = 'fixed';
-      drip.style.top = '-20px';
-      drip.style.left = `${Math.random() * 100}vw`;
-      drip.style.width = '2px';
-      drip.style.height = '20px';
-      drip.style.background = '#700';
-      drip.style.zIndex = '999';
-      document.body.appendChild(drip);
+      const triggerJumpscare = () => {
+        jumpscare.classList.remove('hidden');
+        scream.play();
+        setTimeout(() => {
+          jumpscare.classList.add('hidden');
+        }, 800);
+      };
 
-      let position = -20;
-      const interval = setInterval(() => {
-        position += 1;
-        drip.style.top = `${position}px`;
-        if (position > window.innerHeight) {
-          clearInterval(interval);
-          document.body.removeChild(drip);
+      // Random jumpscare timing
+      setInterval(() => {
+        if (Math.random() < 0.15) {
+          triggerJumpscare();
         }
-      }, 20);
-    };
+      }, 7000);
 
-    setInterval(createBloodDrip, 2000);
-
-    // Flashing images of ghouls and pain
-    const flashImages = [
-      'https://example.com/ghoul1.jpg',
-      'https://example.com/ghoul2.jpg',
-      'https://example.com/pain1.jpg',
-      'https://example.com/pain2.jpg'
-    ];
-
-    flashImages.forEach((src, index) => {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = `Terrifying image of a ghoul or scene of pain ${index + 1}`;
-      img.classList.add('flash-image');
-      flashingImages.appendChild(img);
-    });
-
-    const flashImage = () => {
-      const images = document.querySelectorAll('.flash-image');
-      const randomIndex = Math.floor(Math.random() * images.length);
-      images[randomIndex].style.opacity = 1;
-      setTimeout(() => {
-        images[randomIndex].style.opacity = 0;
-      }, 100);
-    };
-
-    setInterval(flashImage, 3000);
-
-    // Text scramble effect
-    class TextScramble {
-      constructor(el) {
-        this.el = el;
-        this.chars = '!<>-_\\/[]{}—=+*^?#________';
-        this.update = this.update.bind(this);
-      }
-      setText(newText) {
-        const oldText = this.el.innerText;
-        const length = Math.max(oldText.length, newText.length);
-        const promise = new Promise((resolve) => this.resolve = resolve);
-        this.queue = [];
-        for (let i = 0; i < length; i++) {
-          const from = oldText[i] || '';
-          const to = newText[i] || '';
-          const start = Math.floor(Math.random() * 40);
-          const end = start + Math.floor(Math.random() * 40);
-          this.queue.push({ from, to, start, end });
+      // Cursor-triggered jumpscares
+      document.addEventListener('mousemove', (e) => {
+        if (Math.random() < 0.03) {
+          triggerJumpscare();
         }
-        cancelAnimationFrame(this.frameRequest);
-        this.frame = 0;
-        this.update();
-        return promise;
-      }
-      update() {
-        let output = '';
-        let complete = 0;
-        for (let i = 0, n = this.queue.length; i < n; i++) {
-          let { from, to, start, end, char } = this.queue[i];
-          if (this.frame >= end) {
-            complete++;
-            output += to;
-          } else if (this.frame >= start) {
-            if (!char || Math.random() < 0.28) {
-              char = this.randomChar();
-              this.queue[i].char = char;
+      });
+
+      // Background sounds
+      const ambience = new Howl({
+        src: ['https://example.com/evil-ambience.mp3'],
+        loop: true,
+        volume: 0.4
+      });
+      ambience.play();
+
+      // Evil laughter
+      const evilLaugh = new Howl({
+        src: ['https://example.com/evil-laugh.mp3']
+      });
+
+      setInterval(() => {
+        if (Math.random() < 0.1) {
+          evilLaugh.play();
+        }
+      }, 20000);
+
+      // Image hover effect
+      const images = document.querySelectorAll('.satanist-image');
+      images.forEach(img => {
+        img.addEventListener('mouseover', () => {
+          const demonWhisper = new Howl({
+            src: ['https://example.com/demon-whisper.mp3'],
+            volume: 0.6
+          });
+          demonWhisper.play();
+        });
+      });
+
+      // Blood drip effect
+      const createBloodDrip = () => {
+        const drip = document.createElement('div');
+        drip.style.position = 'fixed';
+        drip.style.top = '-20px';
+        drip.style.left = `${Math.random() * 100}vw`;
+        drip.style.width = '2px';
+        drip.style.height = '20px';
+        drip.style.background = '#700';
+        drip.style.zIndex = '999';
+        document.body.appendChild(drip);
+
+        let position = -20;
+        const interval = setInterval(() => {
+          position += 1;
+          drip.style.top = `${position}px`;
+          if (position > window.innerHeight) {
+            clearInterval(interval);
+            document.body.removeChild(drip);
+          }
+        }, 20);
+      };
+
+      setInterval(createBloodDrip, 2000);
+
+      // Flashing images of ghouls and pain
+      const flashImages = [
+        'https://example.com/ghoul1.jpg',
+        'https://example.com/ghoul2.jpg',
+        'https://example.com/pain1.jpg',
+        'https://example.com/pain2.jpg'
+      ];
+
+      flashImages.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `Terrifying image of a ghoul or scene of pain ${index + 1}`;
+        img.classList.add('flash-image');
+        flashingImages.appendChild(img);
+      });
+
+      const flashImage = () => {
+        const images = document.querySelectorAll('.flash-image');
+        const randomIndex = Math.floor(Math.random() * images.length);
+        images[randomIndex].style.opacity = 1;
+        setTimeout(() => {
+          images[randomIndex].style.opacity = 0;
+        }, 100);
+      };
+
+      setInterval(flashImage, 3000);
+
+      // Text scramble effect
+      class TextScramble {
+        constructor(el) {
+          this.el = el;
+          this.chars = '!<>-_\\/[]{}—=+*^?#________';
+          this.update = this.update.bind(this);
+        }
+        setText(newText) {
+          const oldText = this.el.innerText;
+          const length = Math.max(oldText.length, newText.length);
+          const promise = new Promise((resolve) => this.resolve = resolve);
+          this.queue = [];
+          for (let i = 0; i < length; i++) {
+            const from = oldText[i] || '';
+            const to = newText[i] || '';
+            const start = Math.floor(Math.random() * 40);
+            const end = start + Math.floor(Math.random() * 40);
+            this.queue.push({ from, to, start, end });
+          }
+          cancelAnimationFrame(this.frameRequest);
+          this.frame = 0;
+          this.update();
+          return promise;
+        }
+        update() {
+          let output = '';
+          let complete = 0;
+          for (let i = 0, n = this.queue.length; i < n; i++) {
+            let { from, to, start, end, char } = this.queue[i];
+            if (this.frame >= end) {
+              complete++;
+              output += to;
+            } else if (this.frame >= start) {
+              if (!char || Math.random() < 0.28) {
+                char = this.randomChar();
+                this.queue[i].char = char;
+              }
+              output += `<span class="dud">${char}</span>`;
+            } else {
+              output += from;
             }
-            output += `<span class="dud">${char}</span>`;
+          }
+          this.el.innerHTML = output;
+          if (complete === this.queue.length) {
+            this.resolve();
           } else {
-            output += from;
+            this.frameRequest = requestAnimationFrame(this.update);
+            this.frame++;
           }
         }
-        this.el.innerHTML = output;
-        if (complete === this.queue.length) {
-          this.resolve();
-        } else {
-          this.frameRequest = requestAnimationFrame(this.update);
-          this.frame++;
+        randomChar() {
+          return this.chars[Math.floor(Math.random() * this.chars.length)];
         }
       }
-      randomChar() {
-        return this.chars[Math.floor(Math.random() * this.chars.length)];
-      }
-    }
 
-    // Apply text scramble effect to headings
-    const headings = document.querySelectorAll('h1, h2');
-    headings.forEach(heading => {
-      const fx = new TextScramble(heading);
-      let counter = 0;
-      const next = () => {
-        fx.setText(heading.textContent).then(() => {
-          setTimeout(next, 7000);
-        });
-      };
-      next();
-    });
+      // Apply text scramble effect to headings
+      const headings = document.querySelectorAll('h1, h2');
+      headings.forEach(heading => {
+        const fx = new TextScramble(heading);
+        let counter = 0;
+        const next = () => {
+          fx.setText(heading.textContent).then(() => {
+            setTimeout(next, 7000);
+          });
+        };
+        next();
+      });
 
-  </script>
+    </script>
 </body>
 
 </html>
