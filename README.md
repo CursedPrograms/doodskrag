@@ -8,7 +8,7 @@
   <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%23323330.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 </div>
 
-# Cursed Entertainment
+# doodskrag
 
 Host files for Doodskrag website. Visit the live website [here](https://cursedprograms.github.io/doodskrag/).
 
