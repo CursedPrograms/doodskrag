@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'metallord'; /* Change to your chosen font name */
+    src: url('fonts/metallord.otf') format('opentype'); /* Adjust the path */
+}
+
+@font-face {
+    font-family: 'blacken'; /* Change to your chosen font name */
+    src: url('fonts/blacken.otf') format('opentype'); /* Adjust the path */
+}
+
+.metal-font {
+    font-family: 'metallord', serif;
+    font-size: 36px; /* Adjust as needed */
+    color: #ffffff; /* Change color to fit your theme */
+    text-shadow: 2px 2px 4px #000000; /* Add a shadow for depth */
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'blacken', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url('https://example.com/pentagram-cursor.png'), auto;
+  }
+  #content {
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'metallord', serif;
+    font-size: 4em;
+    text-shadow: 0 0 10px #700, 0 0 20px #f00;
+    animation: flicker 0.5s infinite alternate;
+  }
+  @keyframes flicker {
+    0% { opacity: 0.8; text-shadow: 0 0 10px #700, 0 0 20px #f00; }
+    100% { opacity: 1; text-shadow: 0 0 15px #f00, 0 0 25px #f00; }
+  }
+  #pentagram {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    animation: rotate 30s linear infinite reverse;
+  }
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .hidden {
+    display: none;
+  }
+  #jumpscare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://example.com/demonic-face.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1000;
+  }
+  .satanist-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(150%);
+    transition: all 0.3s ease;
+    border: 3px solid #700;
+    box-shadow: 0 0 10px #f00;
+  }
+  .satanist-image:hover {
+    filter: grayscale(0%) contrast(100%);
+    transform: scale(1.1);
+    border-color: #f00;
+  }
+  #image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  #flashing-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+  }
+  .flash-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+  #info-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #700;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    box-shadow: 0 0 20px #f00;
+  }
+  #info-container h2 {
+    color: #f00;
+    text-align: center;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 0 0 10px #700;
+  }
+  #info-container ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #info-container li::before {
+    content: "🔥";
+    margin-right: 10px;
+  }
+  p {
+    text-shadow: 0 0 5px #f00;
+  }
