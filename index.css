@@ -103,7 +103,7 @@ body {
     padding: 20px;
     margin-top: 30px;
     text-align: left;
-    font-family: 'Cinzel', serif;
+    font-family: 'blacken', serif;
     font-size: 1.2em;
     line-height: 1.6;
     box-shadow: 0 0 20px #f00;
@@ -111,7 +111,7 @@ body {
   #info-container h2 {
     color: #f00;
     text-align: center;
-    font-family: 'Nosifer', cursive;
+    font-family: 'blacken', serif;
     text-shadow: 0 0 10px #700;
   }
   #info-container ul {
@@ -119,7 +119,7 @@ body {
     padding-left: 0;
   }
   #info-container li::before {
-    content: "🔥";
+    content: "⛧";
     margin-right: 10px;
   }
   p {
