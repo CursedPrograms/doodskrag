@@ -213,7 +213,23 @@ nav .thumbs img:hover { filter: grayscale(0) sepia(.6) hue-rotate(-30deg) satura
 .tiny { margin: 6px 8px 8px; color: #555; font-size: 9px; text-align: center; }
 
 .stage .screen { flex: 1; min-height: 0; background: #000; border: 2px inset #222; margin: 4px; }
-.stage iframe { display: block; width: 100%; height: 100%; border: 0; filter: contrast(1.15) saturate(.8); }
+.stage iframe, .stage video { display: block; width: 100%; height: 100%; border: 0; background: #000; filter: contrast(1.15) saturate(.8); }
+.stage [hidden] { display: none; }
+
+/* video switch, like an old tab strip */
+.tabs { flex: none; display: flex; gap: 2px; padding: 4px 4px 0; }
+.tabs button {
+  padding: 2px 8px;
+  font: bold 10px var(--mono);
+  letter-spacing: .08em;
+  color: var(--grey);
+  background: #000;
+  border: 1px solid var(--dried);
+  border-bottom: 0;
+  cursor: crosshair;
+}
+.tabs button:hover { color: #fff; background: var(--dried); }
+.tabs button.on { color: var(--red); background: var(--dried); border-color: var(--blood); }
 
 aside { min-height: 0; display: flex; flex-direction: column; gap: var(--gap); }
 .sc { flex: 1; min-height: 166px; }

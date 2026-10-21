@@ -55,12 +55,18 @@
 
       <!-- middle: the video -->
       <section class="box stage">
-        <div class="bar"><span>doodskrag_video.avi</span><span class="blink">● REC</span></div>
+        <div class="bar"><span id="video-title">alleen.avi</span><span class="blink">● REC</span></div>
+        <div class="tabs">
+          <button class="on" data-show="yt" data-title="alleen.avi">[ Alleen ]</button>
+          <button data-show="local" data-title="dood_en_bevrediging.avi">[ Dood en Bevrediging ]</button>
+        </div>
         <div class="screen">
-          <iframe title="Doodskrag on YouTube" loading="lazy" allowfullscreen
+          <iframe id="yt" title="Alleen by Doodskrag on YouTube" loading="lazy" allowfullscreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             src="https://www.youtube-nocookie.com/embed/QSwwdVdXdxk?rel=0"></iframe>
+          <video id="local" src="video/dood-en-bevrediging.mp4" controls playsinline preload="metadata" hidden
+            title="Dood en Bevrediging by Doodskrag"></video>
         </div>
       </section>
 

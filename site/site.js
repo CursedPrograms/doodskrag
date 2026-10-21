@@ -11,6 +11,27 @@ setTimeout(enter, 6000);
 
 const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// Video switch: YouTube (Alleen) or the band's own file (Dood en Bevrediging).
+// Hiding the YouTube frame doesn't stop it, so blank its src and restore it on the way back.
+const yt = document.getElementById("yt");
+const local = document.getElementById("local");
+const ytSrc = yt.src;
+const videoTitle = document.getElementById("video-title");
+document.querySelectorAll(".tabs button").forEach(tab => tab.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach(t => t.classList.toggle("on", t === tab));
+  videoTitle.textContent = tab.dataset.title;
+  const showYt = tab.dataset.show === "yt";
+  yt.hidden = !showYt;
+  local.hidden = showYt;
+  if (showYt) {
+    local.pause();
+    if (yt.src !== ytSrc) yt.src = ytSrc;
+  } else {
+    yt.src = "about:blank";
+    local.play().catch(() => {});
+  }
+}));
+
 // Every so often the whole page tears for a frame or two, like a bad VHS.
 function tear() {
   document.body.classList.add("tear");
